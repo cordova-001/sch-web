@@ -1,3 +1,4 @@
+from tkinter import CASCADE
 from django.db import models
 
 # Create your models here.
@@ -12,3 +13,9 @@ class AddStaff(models.Model):
 
     def __str__(self) -> str:
         return super().__str__()
+
+
+class AddStudents(models.Model):
+    student_id = models.ForeignKey(AddStaff, on_delete=CASCADE)
+    Student_sch = models.CharField(max_length=120)
+    student_parent = models.CharField(max_length=120)
