@@ -12,7 +12,7 @@ class AddStaff(models.Model):
     sex = models.CharField(max_length=120)
 
     def __str__(self) -> str:
-        return super().__str__()
+        return self.first_name
 
 
 class AddStudents(models.Model):
