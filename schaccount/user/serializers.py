@@ -9,7 +9,7 @@ class AddStaffSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class AddStaffSerializer(serializers.ModelSerializer):
+class AddStudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = AddStudents
         fields = '__all__'
